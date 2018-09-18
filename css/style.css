@@ -11,6 +11,12 @@
     font-style: normal;
 }
 @font-face{
+    font-family: 'HelveticaNeueCyr-Bold';
+    src: url('../fonts/HelveticaNeueCyr-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
     font-family: 'NimbusSanTConBold';
     src: url('../fonts/NIMBSTB.ttf') format('truetype');
     font-weight: normal;
@@ -111,6 +117,7 @@ header .about .text{
     margin-right:-15px;
     margin-left:-15px;
     justify-content: center;
+    margin-bottom: -5%;
 }
 .products .card {
     position:relative;
@@ -134,7 +141,7 @@ header .about .text{
     color:  #f1f2f5;
     line-height: 1.176;
 }
-.products .card .button a{
+.products .card .button a, .community .benefits .button a{
     font: 1.9em 'NimbusSanTConBold', sans-serif;
     color:  rgba(255, 255, 255, 0.8);
     line-height: 2.105;
@@ -147,4 +154,41 @@ header .about .text{
 .products .card .button:hover a{
     color: #8dc705;
     border-color: #8dc705;
+}
+.community{
+    background: url('../img/background-community.png') no-repeat;
+    background-size: cover;
+    padding: 5% 0;
+}
+.community .benefits{
+    width: 50%;
+}
+.community .benefits h2{
+    font: 3.4em 'HelveticaNeueCyr-Light', sans-serif;
+    color:  #000000;
+    line-height: 1.559;
+    margin: 0;
+}
+.community .benefits h3{
+    font: 5.4em 'HelveticaNeueCyr-Bold', sans-serif;
+    color:  #47890a;
+    line-height: 0.981;
+    margin: 0 0 30px;
+}
+.community .benefits .text{
+    font: 1.4em Arial, sans-serif;
+    color:  #000000;
+    line-height: 1.786;
+
+}
+.community .benefits .button{
+    margin-top: 30px;
+}
+.community .benefits .button a{
+    color: #48890a;
+    border-color: #48890a;
+}
+.community .benefits .button:hover a{
+    color: white;
+    border-color: white;
 }
