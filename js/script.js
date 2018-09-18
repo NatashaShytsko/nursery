@@ -10,4 +10,9 @@ $(document).ready(function () {
             link.click();
         }
     });
+    $('#icon').click(function(){
+        $(this).toggleClass('open');
+    });
+
 });
+
