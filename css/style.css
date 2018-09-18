@@ -24,7 +24,7 @@
     src: url('../fonts/NIMBSTB.eot');
     src: local('NimbusSanTConBold'), local('NimbusSanTConBold'),
     url('../fonts/NIMBSTB.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/NIMBSTB.otf') format('truetype');
+    url('../fonts/NIMBSTB.ttf') format('truetype');
 
     font-weight: normal;
     font-style: normal;
@@ -65,12 +65,14 @@ header .logo img {
 }
 
 header .icon {
+
     font: 3em 'NimbusSanTConBold', sans-serif;
     color: white;
     padding: 5px 10px;
     border: 2px solid white;
     border-radius: 10px;
     display: none;
+
 }
 
 header nav {
@@ -80,7 +82,7 @@ header nav {
     overflow: hidden;
 }
 
-header nav ul {
+header nav ul, footer .footer-menu ul {
     margin: 0;
     padding: 0;
 }
@@ -306,7 +308,7 @@ footer .bottom .container {
     }
 
     header nav {
-        margin: 0;
+        margin: 10px 0;
         display: none;
         background: linear-gradient(transparent, #134708, transparent);
         border-radius: 0;
