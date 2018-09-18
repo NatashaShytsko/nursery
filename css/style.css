@@ -18,7 +18,7 @@
 }
 @font-face{
     font-family: 'NimbusSanTConBold';
-    src: url('../fonts/NIMBSTB.ttf') format('truetype');
+    src: url('../fonts/NIMBSTB.OTF');
     font-weight: normal;
     font-style: normal;
 }
@@ -159,6 +159,7 @@ header .about .text{
     background: url('../img/background-community.png') no-repeat;
     background-size: cover;
     padding: 5% 0;
+    border-bottom: solid 4px #8dc705;
 }
 .community .benefits{
     width: 50%;
