@@ -68,13 +68,13 @@ header nav{
 header nav ul{
     margin: 0;
 }
-header nav ul li{
+header nav ul li, footer .footer-menu ul li{
     list-style: none;
     display: inline-block;
     padding: 25px 15px;
     border-radius: 5px;
 }
-header nav ul li a{
+header nav ul li a,  footer .footer-menu ul li a{
     font: 1.9em 'NimbusSanTConBold', sans-serif;
     color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
@@ -191,4 +191,28 @@ header .about .text{
 .community .benefits .button:hover a{
     color: white;
     border-color: white;
+}
+footer .footer-menu{
+    background-color: white;
+    text-align: center;
+}
+footer .footer-menu ul li{
+    padding: 15px;
+}
+footer .footer-menu ul li a{
+    color: #7b7b7b;
+}
+footer .footer-menu ul li a:hover{
+    color: #8dc705;
+}
+footer .bottom{
+    font: 1.2em Arial, sans-serif;
+    color:  #919191;
+    line-height: 1.667;
+    background-color:  #e4e4e4;
+    padding: 25px 0;
+}
+footer .bottom .container{
+    display: flex;
+    justify-content: space-between;
 }
