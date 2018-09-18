@@ -1,149 +1,178 @@
-@font-face{
+@font-face {
     font-family: 'HelveticaNeueCyr-Black';
     src: url('../fonts/HelveticaNeueCyr-Black.otf');
     font-weight: normal;
     font-style: normal;
 }
-@font-face{
+
+@font-face {
     font-family: 'HelveticaNeueCyr-Light';
     src: url('../fonts/HelveticaNeueCyr-Light.otf');
     font-weight: normal;
     font-style: normal;
 }
-@font-face{
+
+@font-face {
     font-family: 'HelveticaNeueCyr-Bold';
     src: url('../fonts/HelveticaNeueCyr-Bold.otf');
     font-weight: normal;
     font-style: normal;
 }
-@font-face{
+
+@font-face {
     font-family: 'NimbusSanTConBold';
-    src: url('../fonts/NIMBSTB.OTF');
+    src: url('../fonts/NIMBSTB.eot');
+    src: local('NimbusSanTConBold'), local('NimbusSanTConBold'),
+    url('../fonts/NIMBSTB.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/NIMBSTB.otf') format('truetype');
+
     font-weight: normal;
     font-style: normal;
 }
-body{
+
+body {
     margin: 0;
     font-size: 10px;
 }
-*, ::after, ::before{
+
+*, ::after, ::before {
     box-sizing: border-box;
 }
-header{
+
+header {
     background: url('../img/background-header.png') no-repeat;
-    background-size: cover ;
+    background-size: cover;
     border-bottom: solid 4px #e46107;
     text-align: center;
     padding-bottom: 20%;
 }
-.container{
-    width:100%;
-    padding-right:15px;
-    padding-left:15px;
-    margin-right:auto;
-    margin-left:auto}
-@media (min-width:576px){
-    .container{max-width:540px}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
 }
-@media (min-width:768px){
-    .container{max-width:720px}
-}
-@media (min-width:992px){
-    .container{max-width:960px}
-}
-@media (min-width:1200px){
-    .container{max-width:1140px}
-}
-header .logo{
+
+header .logo {
     padding-top: 15px;
     position: relative;
 }
-header .logo img{
+
+header .logo img {
     width: 100%;
 }
-header nav{
+
+header .icon {
+    font: 3em 'NimbusSanTConBold', sans-serif;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: none;
+}
+
+header nav {
     margin-top: -30px;
     background: radial-gradient(35% 100% at top, #134708, transparent);
+    border-radius: 100% 100% 0 0;
+    overflow: hidden;
 }
-header nav ul{
+
+header nav ul {
     margin: 0;
+    padding: 0;
 }
-header nav ul li, footer .footer-menu ul li{
+
+header nav ul li, footer .footer-menu ul li {
     list-style: none;
     display: inline-block;
     padding: 25px 15px;
     border-radius: 5px;
 }
-header nav ul li a,  footer .footer-menu ul li a{
+
+header nav ul li a, footer .footer-menu ul li a {
     font: 1.9em 'NimbusSanTConBold', sans-serif;
     color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
     text-decoration: none;
 }
-header nav ul li:hover{
+
+header nav ul li:hover {
     background-color: #e46107;
 }
-header h1{
+
+header h1 {
     font: 6.8em 'HelveticaNeueCyr-Black', sans-serif;
-    color:  #f1f2f5;
+    color: #f1f2f5;
     line-height: 0.882;
     text-shadow: 0px 0px 6px rgba(31, 88, 0, 0.75);
 }
-header .about{
+
+header .about {
     border-radius: 5px;
-    background-color:  rgba(38, 49, 28, 0.7);
+    background-color: rgba(38, 49, 28, 0.7);
     padding: 30px 45px;
 }
-header .about h2{
+
+header .about h2 {
     font: 3.4em 'HelveticaNeueCyr-Light', sans-serif;
-    color:  #f1f2f5;
+    color: #f1f2f5;
     line-height: 1.176;
     margin: 0 0 20px;
 }
-header .about .text{
+
+header .about .text {
     font: 1.4em Arial, sans-serifl;
-    color:  rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.786;
 }
-.products{
-    background-color:  #26311c;
+
+.products {
+    background-color: #26311c;
     text-align: center;
 }
+
 .products .row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right:-15px;
-    margin-left:-15px;
+    margin-right: -15px;
+    margin-left: -15px;
     justify-content: center;
     margin-bottom: -5%;
 }
+
 .products .card {
-    position:relative;
+    position: relative;
     display: inline-block;
     width: 100%;
-    padding-right:15px;
-    padding-left:15px;
-    -ms-flex:0 0 33.333333%;
-    flex:0 0 33.333333%;
-    max-width:33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
     margin-top: -10%;
     margin-bottom: 15%;
 }
-.products .card img{
+
+.products .card img {
     border: solid 6px white;
     border-radius: 50%;
     width: 60%;
 }
-.products .card h3{
+
+.products .card h3 {
     font: 3.4em 'HelveticaNeueCyr-Light', sans-serif;
-    color:  #f1f2f5;
+    color: #f1f2f5;
     line-height: 1.176;
 }
-.products .card .button a, .community .benefits .button a{
+
+.products .card .button a, .community .benefits .button a {
     font: 1.9em 'NimbusSanTConBold', sans-serif;
-    color:  rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
     line-height: 2.105;
     text-decoration: none;
     text-transform: uppercase;
@@ -151,69 +180,170 @@ header .about .text{
     border-radius: 5px;
     border: solid 2px #a1ad97;
 }
-.products .card .button:hover a{
+
+.products .card .button:hover a {
     color: #8dc705;
     border-color: #8dc705;
 }
-.community{
+
+.community {
     background: url('../img/background-community.png') no-repeat;
     background-size: cover;
     padding: 5% 0;
     border-bottom: solid 4px #8dc705;
 }
-.community .benefits{
+
+.community .benefits {
     width: 50%;
 }
-.community .benefits h2{
+
+.community .benefits h2 {
     font: 3.4em 'HelveticaNeueCyr-Light', sans-serif;
-    color:  #000000;
+    color: #000000;
     line-height: 1.559;
     margin: 0;
 }
-.community .benefits h3{
+
+.community .benefits h3 {
     font: 5.4em 'HelveticaNeueCyr-Bold', sans-serif;
-    color:  #47890a;
+    color: #47890a;
     line-height: 0.981;
     margin: 0 0 30px;
 }
-.community .benefits .text{
+
+.community .benefits .text {
     font: 1.4em Arial, sans-serif;
-    color:  #000000;
+    color: #000000;
     line-height: 1.786;
 
 }
-.community .benefits .button{
+
+.community .benefits .button {
     margin-top: 30px;
 }
-.community .benefits .button a{
+
+.community .benefits .button a {
     color: #48890a;
     border-color: #48890a;
 }
-.community .benefits .button:hover a{
+
+.community .benefits .button:hover a {
     color: white;
     border-color: white;
 }
-footer .footer-menu{
+
+footer .footer-menu {
     background-color: white;
     text-align: center;
 }
-footer .footer-menu ul li{
+
+footer .footer-menu ul li {
     padding: 15px;
 }
-footer .footer-menu ul li a{
+
+footer .footer-menu ul li a {
     color: #7b7b7b;
 }
-footer .footer-menu ul li a:hover{
+
+footer .footer-menu ul li a:hover {
     color: #8dc705;
 }
-footer .bottom{
+
+footer .bottom {
     font: 1.2em Arial, sans-serif;
-    color:  #919191;
+    color: #919191;
     line-height: 1.667;
-    background-color:  #e4e4e4;
+    background-color: #e4e4e4;
     padding: 25px 0;
 }
-footer .bottom .container{
+
+footer .bottom .container {
     display: flex;
     justify-content: space-between;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px
+    }
+}
+
+@media (max-width: 1200px) {
+    header nav {
+        margin-top: -25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .products .card {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    header .icon {
+        display: inline-block;
+    }
+
+    header nav {
+        margin: 0;
+        display: none;
+        background: linear-gradient(transparent, #134708, transparent);
+        border-radius: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        border-bottom: 2px solid white;
+        border-radius: 0;
+    }
+
+    header nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    .products .card {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20%;
+    }
+
+    .products .card img {
+        width: 40%;
+    }
+
+    .community .benefits {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 4.5em;
+    }
+
+    .products .card img {
+        width: 60%;
+    }
 }
