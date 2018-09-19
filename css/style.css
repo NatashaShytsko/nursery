@@ -204,7 +204,7 @@ header .about .text {
 .products .card {
     position: relative;
     display: inline-block;
-    width: 100%;
+    width: 33%;
     padding-right: 15px;
     padding-left: 15px;
     -ms-flex: 0 0 33.333333%;
@@ -214,10 +214,28 @@ header .about .text {
     margin-bottom: 15%;
 }
 
-.products .card img {
+.products .card .img {
     border: solid 6px white;
     border-radius: 50%;
-    width: 60%;
+    width: 207px;
+    height: 207px;
+    display: block;
+    margin: 0 auto;
+}
+.products .card:nth-child(1) .img{
+    background: url('../img/potting-soil.jpg') no-repeat;
+}
+.products .card:nth-child(2) .img{
+    background: url('../img/peat-moss.jpg') no-repeat;
+}
+.products .card:nth-child(3) .img{
+    background: url('../img/fertilizers.jpg') no-repeat;
+}
+.products .card:nth-child(4) .img{
+    background: url('../img/mulch.jpg') no-repeat;
+}
+.products .card:nth-child(5) .img{
+    background: url('../img/compost.jpg') no-repeat;
 }
 
 .products .card h3 {
@@ -351,6 +369,7 @@ footer .bottom .container {
 
 @media (max-width: 992px) {
     .products .card {
+        width: 50%;
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
@@ -386,10 +405,6 @@ footer .bottom .container {
         margin-bottom: 20%;
     }
 
-    .products .card img {
-        width: 40%;
-    }
-
     .community .benefits {
         width: 100%;
     }
@@ -399,9 +414,4 @@ footer .bottom .container {
     header h1 {
         font-size: 4.5em;
     }
-
-    .products .card img {
-        width: 60%;
-    }
 }
-
