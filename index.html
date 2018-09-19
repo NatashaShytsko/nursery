@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <title>Nursery Supply Co.</title>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
-    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <header>
@@ -43,27 +43,27 @@
     <div class="container">
         <div class="row">
             <div class="card">
-                <img src="img/potting-soil.png" alt="Image Potting Soil">
+                <img src="img/potting-soil.jpg" alt="Image Potting Soil">
                 <h3>Potting Soil</h3>
                 <div class="button"><a href="">learn more</a></div>
             </div>
             <div class="card">
-                <img src="img/peat-moss.png" alt="Image Peat Moss">
+                <img src="img/peat-moss.jpg" alt="Image Peat Moss">
                 <h3>Peat Moss</h3>
                 <div class="button"><a href="">learn more</a></div>
             </div>
             <div class="card">
-                <img src="img/fertilizers.png" alt="Image Fertilizers">
+                <img src="img/fertilizers.jpg" alt="Image Fertilizers">
                 <h3>Fertilizers</h3>
                 <div class="button"><a href="">learn more</a></div>
             </div>
             <div class="card">
-                <img src="img/mulch.png" alt="Image Mulch">
+                <img src="img/mulch.jpg" alt="Image Mulch">
                 <h3>Mulch</h3>
                 <div class="button"><a href="">learn more</a></div>
             </div>
             <div class="card">
-                <img src="img/compost.png" alt="Image Compost">
+                <img src="img/compost.jpg" alt="Image Compost">
                 <h3>Compost</h3>
                 <div class="button"><a href="">learn more</a></div>
             </div>
@@ -101,6 +101,7 @@ Nursery Supply Fundraising provides organizations the opportunity to generate up
         </div>
     </div>
 </footer>
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

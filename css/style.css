@@ -40,7 +40,7 @@ body {
 }
 
 header {
-    background: url('../img/background-header.png') no-repeat;
+    background: url('../img/background-header.jpg') no-repeat;
     background-size: cover;
     border-bottom: solid 4px #e46107;
     text-align: center;
@@ -98,7 +98,7 @@ header .icon span{
     transition: .25s ease-in-out;
 }
 header #icon span:nth-child(1) {
-    top: 0px;
+    top: 0;
 }
 
 header #icon span:nth-child(2) {
@@ -243,7 +243,7 @@ header .about .text {
 }
 
 .community {
-    background: url('../img/background-community.png') no-repeat;
+    background: url('../img/background-community.jpg') no-repeat;
     background-size: cover;
     padding: 5% 0;
     border-bottom: solid 4px #8dc705;
