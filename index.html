@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <title>Nursery Supply Co.</title>
 
-
-    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style-head.css">
 
 </head>
 <body>
@@ -102,6 +101,11 @@ Nursery Supply Fundraising provides organizations the opportunity to generate up
     </div>
 </footer>
 <script src="js/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function() {
+$("head").append("<link rel='stylesheet' type='text/css' href='css/style.css' />");
+})
+</script>
 <script src="js/script.js"></script>
 </body>
 </html>
