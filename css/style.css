@@ -137,10 +137,19 @@ header #icon.open span:nth-child(3) {
 }
 
 header nav {
+    display: block;
     margin-top: -3%;
     background: radial-gradient(35% 100% at top, #134708, transparent);
     border-radius: 100% 100% 0 0;
     overflow: hidden;
+}
+
+header nav.visible {
+    display: block;
+}
+
+header nav.invisible {
+    display: none;
 }
 
 header nav ul, footer .footer-menu ul {
