@@ -404,12 +404,7 @@ footer .bottom .container {
     header nav ul li:last-child {
         border-bottom: none;
     }
-    footer .footer-menu ul {
-        padding: 10px 0;
-    }
-    footer .footer-menu ul li  {
-        padding: 10px;
-    }
+
     .products .card {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -417,8 +412,20 @@ footer .bottom .container {
         margin-bottom: 20%;
     }
 
+    .community {
+        padding: 10% 5%;
+    }
+
     .community .benefits {
         width: 100%;
+    }
+
+    footer .footer-menu ul {
+        padding: 10px 0;
+    }
+
+    footer .footer-menu ul li {
+        padding: 10px;
     }
 }
 
