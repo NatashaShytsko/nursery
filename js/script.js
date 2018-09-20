@@ -45,3 +45,4 @@ function hideMenu($menu) {
 function isMobile() {
     return $(window).width() <= 768;
 }
+
