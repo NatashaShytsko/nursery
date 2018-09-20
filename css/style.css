@@ -489,3 +489,13 @@ footer .bottom .container {
         align-items: center;
     }
 }
+@media (max-height: 360px) {
+    header nav ul li {
+       padding: 15px;
+    }
+
+    header nav ul li a{
+       font-size: 1.5em;
+    }
+
+}
