@@ -404,17 +404,19 @@ footer .bottom .container {
         display: inline-block;
     }
 
-    header .logo-mobile {
+    header .logo{
         display: block;
         margin-bottom: 20px;
+        width: 100%;
+        overflow: hidden;
     }
 
-    header .logo-mobile img {
-        width: 70%;
-    }
-
-    header .logo {
-        display: none;
+    header .logo img {
+        width: 720px;
+        margin: 0 auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     header nav {
@@ -467,14 +469,6 @@ footer .bottom .container {
 @media (max-width: 576px) {
     header h1 {
         font-size: 4.5em;
-    }
-
-    header .logo-mobile {
-        display: block;
-    }
-
-    header .logo-mobile img {
-        width: 90%;
     }
 
     .products .card {
